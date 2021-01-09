@@ -27,6 +27,7 @@ const analyzeCommits= async(pluginConfig: any, context: Context):Promise<any>=>{
 	throw new SemanticReleaseError('An error occurred during the release process, aborting');
 	}
 }
+
 // from './hooks/analyzeCommits';
 function fail(){console.log('>>>>>fail');}
 // from './hooks/fail';
