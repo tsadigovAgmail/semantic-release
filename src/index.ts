@@ -4,7 +4,6 @@ import SemanticReleaseError from '@semantic-release/error';
 //import { errors } from '../helpers';
 
 let errors=[];
-//feat another
 
 //import a from '@semantic-release/commit-analyzer';
 const analyzeCommits= async(pluginConfig: any, context: Context):Promise<any>=>{
