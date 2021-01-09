@@ -6,22 +6,23 @@ import SemanticReleaseError from '@semantic-release/error';
 let errors=[];
 
 //import a from '@semantic-release/commit-analyzer';
-function analyzeCommits(pluginConfig: any, context: Context){
+const analyzeCommits= async(pluginConfig: any, context: Context):Promise<any>=>{
 	try{
-	const { logger, branch } = context;
+		const { logger, branch } = context;
+		console.log(commitAnalyzer);
+		logger.log('Determining release type of Salesforce package');
 
-	logger.log('Determining release type of Salesforce package');
-
-	const releaseType = commitAnalyzer.analyzeCommits(pluginConfig, context);
-	if (releaseType) {
-		if (branch.channel === 'master' || branch.name === 'master') {
-		logger.log(`We are creating a ${releaseType} of a Salesforce package`);
-		return releaseType;
-		} else {
-		logger.log(`We are creating a pre-release of a Salesforce package`);
-		return 'patch';
+		const releaseType = await commitAnalyzer.analyzeCommits(pluginConfig, context);
+		console.log(releaseType);
+		if (releaseType) {
+			if (branch.channel === 'master' || branch.name === 'master') {
+			logger.log(`We are creating a ${releaseType} of a Salesforce package`);
+			return releaseType;
+			} else {
+			logger.log(`We are creating a pre-release of a Salesforce package`);
+			return 'patch';
+			}
 		}
-	}
 	} catch (error) {
 	errors.push(error);
 	throw new SemanticReleaseError('An error occurred during the release process, aborting');
