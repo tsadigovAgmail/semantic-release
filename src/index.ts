@@ -52,6 +52,8 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
 	  logger.log('Verifying conditions...');
   
 
+
+	  
 	  if (process.env.SF_USERNAME) {
 		//await logout(process.env.SF_USERNAME);
 		//await login(process.env.SF_USERNAME, process.env.SF_LOGIN_URL || 'https://login.salesforce.com');
