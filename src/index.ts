@@ -5,6 +5,8 @@ import SemanticReleaseError from '@semantic-release/error';
 
 let errors=[];
 
+
+
 //import a from '@semantic-release/commit-analyzer';
 const analyzeCommits= async(pluginConfig: any, context: Context):Promise<any>=>{
 	try{
@@ -53,7 +55,7 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
   
 
 
-	  
+
 	  if (process.env.SF_USERNAME) {
 		//await logout(process.env.SF_USERNAME);
 		//await login(process.env.SF_USERNAME, process.env.SF_LOGIN_URL || 'https://login.salesforce.com');
