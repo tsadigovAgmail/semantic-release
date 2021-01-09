@@ -55,7 +55,6 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
 		//await logout(process.env.SF_USERNAME);
 		//await login(process.env.SF_USERNAME, process.env.SF_LOGIN_URL || 'https://login.salesforce.com');
 	  }
-  
 	  if (process.env.SF_DEVHUB_USERNAME) {
 		//await logout(process.env.SF_DEVHUB_USERNAME);
 		//await login(process.env.SF_DEVHUB_USERNAME, 'https://login.salesforce.com');
