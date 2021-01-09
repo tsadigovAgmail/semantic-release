@@ -67,7 +67,6 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
 	  //throw new SemanticReleaseError('An error occurred during the release process, aborting');
 	}
   
-
   };
 // from './hooks/verifyConditions';
 function verifyRelease//(){console.log('>>>>>>>verifyRelease');}
