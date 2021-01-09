@@ -59,7 +59,6 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
 		//await logout(process.env.SF_DEVHUB_USERNAME);
 		//await login(process.env.SF_DEVHUB_USERNAME, 'https://login.salesforce.com');
 	  }
-  
 	} catch (error) {
 	  //errors.push(error);
 	  //throw new SemanticReleaseError('An error occurred during the release process, aborting');
