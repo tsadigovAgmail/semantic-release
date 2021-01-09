@@ -1,7 +1,6 @@
 import { Context } from "semantic-release";
 import commitAnalyzer from '@semantic-release/commit-analyzer';
 import SemanticReleaseError from '@semantic-release/error';
-//import { errors } from '../helpers';
 
 let errors=[];
 
