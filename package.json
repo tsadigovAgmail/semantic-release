@@ -4,7 +4,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "nodemon npm run deploy",
-    "deploy": "semantic-release -e ./dist/index.js --no-ci ",
+    "deploy": "semantic-release -e ./dist/index.js --no-ci --debug",
     "tsc": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
