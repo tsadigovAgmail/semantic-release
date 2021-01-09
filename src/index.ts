@@ -97,5 +97,4 @@ function verifyRelease//(){console.log('>>>>>>>verifyRelease');}
   
   };
 // from './hooks/verifyRelease';
-
 export { verifyConditions, analyzeCommits, verifyRelease, prepare, publish, success, fail };
