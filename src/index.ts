@@ -50,7 +50,6 @@ function verifyConditions//{console.log('>>>>>>>verifyConditions');}
   console.log('Running release process for SalesForce DX package');
 	  logger.log(`Running release process for SalesForce DX package`);
 	  logger.log('Verifying conditions...');
-  
 
 	  if (process.env.SF_USERNAME) {
 		//await logout(process.env.SF_USERNAME);
